@@ -24,7 +24,7 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/expressv2:latest
-
+          
   deploy:
     needs: build-and-push
     runs-on: ubuntu-latest
